@@ -1,0 +1,50 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    section#introSection   
+        div Welcome to Wajahat Dance Academy 
+        .small  Eat Sleep Dance Repeat 
+
+    section#missionSection   
+        h2  Our Mission 
+        div.card 
+          h3 Dance Perfection 
+          .card-box
+            .card-img
+              img(src="/static/img/d1.jfif")
+
+              div.card-content
+                p This is the best dance academy of the universe
+                
+        div.card 
+          h3 Dance the way you like 
+          .card-box 
+            .card-img 
+              img(src="/static/img/d2.jfif")
+
+              div.card-content
+                p This is the best dance academy of the universe
+
+        div.card 
+          h3 Expert Teaching 
+          .card-box
+            .card-img
+              img(src="/static/img/d3.jfif")
+
+              div.card-content
+                p This is the best dance academy of the universe
+
+    section#sponsorSection   
+        h2  Our Sponsors 
+        #sponsors
+          img(src="/static/img/fb.jfif", alt="Facebook" class="spImage")
+          img(src="/static/img/insta.jfif", alt="Instagram" class="spImage")
+          img(src="/static/img/whatsapp.jfif", alt="Whatsapp" class="spImage")
+          img(src="/static/img/x.png", alt="X" class="spImage")
